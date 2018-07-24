@@ -13,9 +13,9 @@ helpers.readPipe(function(pipe){
     console.log(dateOneWeekAgo);
 
     googleTrends.interestOverTime({
-        keyword: 'Noublie jamais',
+        keyword: arguments.keyword,
         hl: 'fr',
-        timezone:  -120,
+        timezone:  arguments.timeline,
         category: 0,
         startTime: dateOneWeekAgo,
         geo: 'FR',
